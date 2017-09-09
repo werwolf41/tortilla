@@ -1,0 +1,1 @@
+(function(){document.cookie='phptu_width='+screen.width+';path=/';})();

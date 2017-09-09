@@ -1,0 +1,74 @@
+phpTemplates 1.5.2-beta
+===========================================
+1.  change require_once to require in phpTemplate
+
+phpTemplates 1.5.1-beta
+===========================================
+1.  Minor bugfix
+
+phpTemplates 1.5.0-beta
+===========================================
+1.  Added $properties in call phpTemplate::getProperties()
+2.  Overwrited $modx->map['modResource']['aggregates']['Template']
+    with phpTemplate. Now modResource::getOne('Template') return phpTemplate
+3.  Added plugin on OnLoadWebDocument event. If template have property 
+    phptemplates.non-cached and phptemplates.non-cached == true, will be called
+    $modx->resource->setProcessed(false) and Template will processed on any request.
+    It`s useful for Smarty and other template systems.
+
+phpTemplates 1.4.1-rc
+===========================================
+1.  [#1] Added phpTemplate::getProperties()
+2.  [#3] Bugfix Overview data controller
+
+
+phpTemplates 1.4.0-rc
+===========================================
+1.  phpTemplate and phpTemplateResource code refactoring.
+    Now full MODX and Smarty tags cache control!
+
+
+phpTemplates 1.3.1-rc
+===========================================
+1.  Headers bugfix
+
+
+phpTemplates 1.3.0-rc
+===========================================
+1.  Added headers
+
+
+phpTemplates 1.2.2-rc
+===========================================
+1.  Switched to RC-version
+
+2.  Added folder icon
+
+
+phpTemplates 1.2.1-beta
+===========================================
+1. Startupscripts addition bugfix
+
+
+phpTemplates 1.2.0-beta
+===========================================
+1. Resource content clearing bugfix
+
+2. Plugins envoke event bugfix
+
+
+phpTemplates 1.1.0-beta
+===========================================
+1. Optimized resource cache
+
+
+phpTemplates 1.0.1-beta
+===========================================
+1. Added phptemplates plugin
+
+
+phpTemplates 1.0.0-beta
+===========================================
+1. Added php static templates
+
+2. Added custom resources

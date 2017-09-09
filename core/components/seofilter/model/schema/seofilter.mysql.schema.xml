@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="seofilter" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="seofilter"
+       version="1.1">
+
+    <object class="sfParam" table="sf_params" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="type" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+
+        <composite alias="Pieces" class="sfPiece" local="id" foreign="param" cardinality="many" owner="local" />
+    </object>
+
+    <object class="sfPiece" table="sf_param_pieces" extends="xPDOSimpleObject">
+        <field key="param" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="value" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="alias" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="correction" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+
+        <index alias="param" name="param" primary="false" unique="false" type="BTREE">
+            <column key="param" length="" collation="A" null="false" />
+        </index>
+        <index alias="value" name="value" primary="false" unique="false" type="BTREE">
+            <column key="value" length="" collation="A" null="false" />
+        </index>
+        <index alias="alias" name="alias" primary="false" unique="false" type="BTREE">
+            <column key="alias" length="" collation="A" null="false" />
+        </index>
+
+        <aggregate alias="Param" class="sfParam" local="param" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+
+    <object class="sfPieceContent" table="sf_pieces_content" extends="xPDOSimpleObject">
+        <field key="resource_id" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="alias" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+
+        <field key="pagetitle" dbtype="varchar" precision="1024" phptype="string" null="false" default="" />
+        <field key="title" dbtype="varchar" precision="1024" phptype="string" null="false" default="" />
+        <field key="keywords" dbtype="varchar" precision="1024" phptype="string" null="false" default="" />
+        <field key="description" dbtype="varchar" precision="1024" phptype="string" null="false" default="" />
+        <field key="text1" dbtype="text" phptype="string" null="false" default="" />
+        <field key="text2" dbtype="text" phptype="string" null="false" default="" />
+
+        <index alias="resource_id" name="resource_id" primary="false" unique="false" type="BTREE">
+            <column key="resource_id" length="" collation="A" null="false" />
+        </index>
+        <index alias="alias" name="alias" primary="false" unique="false" type="BTREE">
+            <column key="alias" length="" collation="A" null="false" />
+        </index>
+
+        <aggregate alias="Resource" class="modResource" local="resource_id" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+
+    <object class="sfDefaultContent" table="sf_default_content" extends="xPDOSimpleObject">
+        <field key="resource_id" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="active" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="false" default="1" />
+        <field key="children" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="priority" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+
+        <field key="text1" dbtype="text" phptype="string" null="false" default="" />
+        <field key="text2" dbtype="text" phptype="string" null="false" default="" />
+
+        <index alias="resource_id" name="resource_id" primary="false" unique="false" type="BTREE">
+            <column key="resource_id" length="" collation="A" null="false" />
+        </index>
+
+        <aggregate alias="Resource" class="modResource" local="resource_id" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+
+</model>

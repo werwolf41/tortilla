@@ -1,0 +1,79 @@
+modxSmarty-1.0.3-beta
+=============================================================
+1. Added as_tag property in {snippet}
+
+
+modxSmarty-1.0.2-beta
+=============================================================
+1. Fixed templates order
+
+
+modxSmarty-1.0.1-beta
+=============================================================
+1. Added less plugin
+2. Minor bugfix
+
+
+modxSmarty-1.0.0-beta
+=============================================================
+1. Added Smarty lib v3.1.20
+2. Multy templates support
+3. Minor bugfix
+
+
+modxSmarty-0.0.10-beta
+=============================================================
+1.  Added $template_url in modxSmarty plugin
+
+
+modxSmarty-0.0.9-beta
+=============================================================
+1.  Added pagination function. Thanks for Sergey Shlyahov @Husband!
+2.  Added snippet smarty.
+3.  Minor bugfixes.
+
+
+modxSmarty-0.0.8-beta
+=============================================================
+1.  Add empty Smarty compiled directory on SiteRefresh event.
+2.  Add full $modx support in Smarty-templates via tag {$modx}
+
+
+modxSmarty-0.0.7-beta
+=============================================================
+1.  Remove echo $num from spell modifier
+2.  Bugfix $assign notices
+3.  Minor processor-plugin code refactoring
+
+modxSmarty-0.0.6-beta
+=============================================================
+1.  Added Smarty-plugin lang. Return $modx->lexicon();
+2.  Added Smarty-modifier spell. Example {$var|spell:"year":"years":"years"}
+
+modxSmarty-0.0.5-beta
+=============================================================
+1.  Remove print_r from processor-plugin
+
+modxSmarty-0.0.4-beta
+=============================================================
+1.  Field-function refactored. Now return TV-values available
+2.  Added Smarty-function processor return $modx->runProcessor()
+
+modxSmarty-0.0.3-beta
+=============================================================
+1.  Added Smarty-param "assign" in all functions
+2.  Smarty params "scriptProperties" for tags "snippet" and "chunk"
+    renamed for "params"
+
+modxSmarty-0.0.2-beta
+=============================================================
+1.  Added Smarty-function field. Return modResource field value
+2.  Added Smarty-function tv. Return modTemplateVar value
+3.  Added Smarty-function link. Return $modx->makeUrl();
+4.  Fixed setting modxSmarty.caching
+
+
+modxSmarty-0.0.1-beta
+=============================================================
+1. Created core
+2. Created plugin Smarty initialization and clearing cache

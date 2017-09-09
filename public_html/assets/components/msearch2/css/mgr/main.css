@@ -1,0 +1,21 @@
+.msearch2-mirrors-item {
+	padding: 5px;
+}
+
+.msearch2-mirrors-item small {
+	color: #AAA;
+}
+
+.modx23.x-toolbar .x-toolbar-cell label {
+	padding: 3px 0 0 18px;
+}
+
+.mse2-index-form .x-item-disabled {
+	color: inherit;
+}
+
+.x-menu-list .fa, .x-menu-list .icon {
+	min-width: 1em;
+	text-align: center;
+	padding-top: 1px;
+}

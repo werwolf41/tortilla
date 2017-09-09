@@ -1,0 +1,246 @@
+/* Ext JS */
+#office-preloader {
+    background: url(../images/preloader.gif) center no-repeat;
+    height: 128px;
+}
+
+form.x-panel-body,
+.x-toolbar .x-form-field {
+    margin: 0;
+}
+
+.x-panel-body .x-form-field:focus {
+    border: 1px solid #cccccc;
+    box-shadow: none;
+}
+
+.x-panel-body label {
+    display: inline;
+}
+
+.x-menu ul.x-menu-list {
+    margin: 0;
+    padding: 0;
+}
+
+.x-selectable, .x-selectable * {
+    -webkit-user-select: text !important;
+    -o-user-select: text !important;
+    -khtml-user-select: all !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+    -moz-user-select: text !important;
+}
+
+.x-panel-body input[disabled],
+.x-panel-body select[disabled],
+.x-panel-body textarea[disabled],
+.x-panel-body input[readonly],
+.x-panel-body select[readonly],
+.x-panel-body textarea[readonly] {
+    cursor: default;
+}
+
+ul.x-tab-strip-top {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+*[class*="x-"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.x-trigger-noedit {
+    cursor: pointer !important;
+}
+
+.x-panel-btns .x-btn-mc em > button {
+    min-width: 54px;
+}
+
+.x-panel label.desc-under {
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.x-panel .disabled {
+    color: #aaa !important;
+}
+
+.x-panel-mc .x-panel-tbar .x-toolbar {
+    background: transparent !important;
+}
+
+.x-btn-mc em, .x-tab-strip em {
+    font-style: normal;
+}
+
+.ext-strict .x-form-field-trigger-wrap input.x-form-text {
+    border: none;
+}
+
+.x-mask-loading.x-mask-loading-empty div {
+    padding: 2px !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+}
+
+.x-mask-loading.x-mask-loading-empty {
+    border-color: transparent;
+}
+
+/* Actions */
+ul.office-row-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.office-row-actions li {
+    float: left;
+}
+
+ul.office-row-actions .btn {
+    padding: 5px;
+    margin-right: 5px;
+    min-width: 26px;
+}
+
+ul.office-row-actions .btn:last-child {
+    margin-right: 0;
+}
+
+.x-grid3-col-actions {
+    padding: 7px 0 0 7px !important;
+}
+
+.x-grid3-col-actions .action-red, .x-menu .action-red {
+    color: darkred !important;
+}
+
+.x-grid3-col-actions .action-green, .x-menu .action-green {
+    color: darkgreen !important;
+}
+
+.x-grid3-col-actions .action-blue, .x-menu .action-blue {
+    color: cadetblue !important;
+}
+
+.x-grid3-col-actions .action-yellow, .x-menu .action-yellow {
+    color: goldenrod !important;
+}
+
+.x-grid3-col-actions .action-gray, .x-menu .action-gray {
+    color: dimgray !important;
+}
+
+.x-grid3 .green {
+    color: darkgreen;
+}
+
+.x-grid3 .red {
+    color: darkred;
+}
+
+/* Grid*/
+.office-grid-row-disabled {
+    font-style: italic;
+    opacity: .6;
+    color: #555;
+}
+
+/* Menu */
+a.x-menu-item .x-menu-item-text * {
+    cursor: pointer;
+}
+
+a.x-menu-item .x-menu-item-text .icon {
+    line-height: 16px;
+    top: auto;
+}
+
+.x-menu-list .icon {
+    min-width: 1em;
+    text-align: center;
+}
+
+.ext-strict .x-menu-item-icon {
+    top: 5px;
+}
+
+.x-menu-list-item:hover .icon {
+    color: inherit !important;
+}
+
+.btn.actions-menu {
+    width: 40px;
+}
+
+.btn.actions-menu:after {
+    content: " \f107";
+}
+
+.x-form-label-left .x-form-item-label,
+.x-form-label-right .x-form-item-label {
+    line-height: 32px;
+}
+
+.x-menu-list .fa {
+    min-width: 1em;
+    text-align: center;
+}
+
+.x-tab-strip li {
+    list-style: none;
+}
+
+/* Search field */
+.x-field-search {
+    height: auto !important;
+    margin: 0;
+    outline: 0;
+    position: relative;
+    white-space: normal;
+    width: auto !important;
+}
+
+.x-field-search-btns {
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 61px;
+    height: 100%;
+}
+
+.x-field-search-clear,
+.x-field-search-go {
+    border-left: 1px solid #e4e4e4 !important;
+}
+
+.x-field-search-clear:hover,
+.x-field-search-go:hover {
+    border-left-color: transparent !important;
+}
+
+.x-field-search-go {
+    right: 31px !important;
+    border-radius: 0 !important;
+}
+
+/* For MODX 2.3 */
+.modx23 .x-tbar-page-size {
+    width: 30px;
+}
+
+.modx23 button.x-btn-text {
+    font-style: normal;
+}
+
+.modx23 .x-form-trigger.x-form-arrow-trigger {
+    right: 0;
+}

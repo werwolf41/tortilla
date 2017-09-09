@@ -1,0 +1,24 @@
+Changelog for phpThumbsUp component.
+
+phpThumbsUp 1.1.1
+================================================
+- Added a parse_path method for converting {core_path}, {assets_path} or
+  {base_path} in setting values to actual paths (fixes caching issue).
+
+phpThumbsUp 1.1.0
+================================================
+- Added screen width threshold for responsive design.
+- Added "default" setting for phpThumbsUp parameters that should apply to all
+  images by default
+- Changed phpThumbsUp to work with only a src and no options
+
+phpThumbsUp 1.0.1
+================================================
+- Added server response headers for 304 and browser caching
+- Fixed issue with spaces in image path
+- Changed cache directory to reside in MODX cache directory
+- Changed phpthumbsup.base_url settings to include {base_url} at the beginning
+
+phpThumbsUp 1.0.0
+================================================
+- Initial commit

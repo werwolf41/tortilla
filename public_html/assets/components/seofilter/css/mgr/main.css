@@ -1,0 +1,75 @@
+.x-grid3-col-actions {
+	padding: 3px 0 3px 5px;
+}
+
+ul.seofilter-row-actions {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.seofilter-row-actions li {
+	float: left;
+}
+
+ul.seofilter-row-actions .btn {
+	padding: 5px;
+	margin-right: 2px;
+	min-width: 26px;
+	font-size: inherit;
+}
+
+.seofilter-grid-row-disabled {
+	color: #aaa;
+}
+.seofilter-grid-row-not-used {
+    color: rgba(173,58,58,1)!important;
+}
+
+.action-red {
+	color: darkred !important;
+}
+
+.action-green {
+	color: darkgreen !important;
+}
+
+.action-blue {
+	color: cadetblue !important;
+}
+
+.action-yellow {
+	color: goldenrod !important;
+}
+
+.action-gray {
+	color: dimgray !important;
+}
+
+a.x-menu-item .x-menu-item-text, a.x-menu-item .x-menu-item-text .icon {
+	cursor: pointer;
+}
+
+a.x-menu-item .x-menu-item-text .icon {
+	line-height: 16px;
+	top: auto;
+}
+
+.x-menu-list .icon {
+	min-width: 1em;
+	text-align: center;
+}
+
+.x-menu-list-item:hover .icon {
+	color: inherit !important;
+}
+
+/*
+ul.seofilter-row-actions .actions-menu {width: 40px;}
+ul.seofilter-row-actions .actions-menu:after {content: " \f107";}
+*/
+
+.seofilter-category-list-item .parents,
+.seofilter-product-list-item .parents {
+    display:block;
+}

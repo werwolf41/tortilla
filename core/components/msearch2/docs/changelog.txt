@@ -1,0 +1,526 @@
+Changelog for mSearch2.
+
+1.8.3-pl
+==============
+- Fixed possible bug with unselected numeric checkbox filters on page reload.
+
+1.8.2-pl
+==============
+- Possible XSS fixes.
+
+1.8.1-pl
+==============
+- Added support of a numeric fields without a sliders.
+
+1.8.0-pl
+==============
+- Ability to use {core_path} placeholder in &customPath option.
+- Fixed bug with case-sensitive ms2 products options.
+- Removed third parameter from mSearch2 class constructor.
+- Fixed bug with short search queries in manager.
+- Fixed a little javascript bug with slider.
+- Added automatic support of decimals in slider.
+- Updated jQueryUI to version 1.12.1.
+
+1.7.3-pl
+==============
+- [mSearch2] Improved compatibility with MySQL 5.7.
+
+1.7.2-pl
+==============
+- [mFilter2] Added encoding of url to support special symbols like percentage.
+
+1.7.1-pl
+==============
+- Some security fixes.
+
+1.7.0-pl
+==============
+- [mFilter2] Fixed processing of the link with multiple sort options.
+- [mFilter2] Updated jQuery UI to version 1.12.1.
+
+1.6.8-pl
+==============
+- [mFilter2] Fixed double submit of the form.
+
+1.6.7-pl
+==============
+- [mFilter2] Fixed the reset of inactive option in the select.
+- [mFilter2] Fixed default option chunk.
+
+1.6.6-pl
+==============
+- [mFilter2] Improved handling of radio inputs in the default javascript.
+
+1.6.5-pl
+==============
+- [mFilter2] Improved behavior of "reset" button.
+- [mFilter2] Fixed history navigation when you returning back to the first page.
+
+1.6.4-pl
+==============
+- Another improvements of compatibility with PHP 7.
+
+1.6.3-pl
+==============
+- Ability to override javascript autoLoad property.
+
+1.6.2-pl
+==============
+- Fixed work of the &showEmptyFilters parameter with "categories", "parents" and "grandparents" filters.
+
+1.6.1-pl
+==============
+- Improved compatibility with PHP 7.
+
+1.6.0-pl
+==============
+- [mFilter2] Improved support of ms2 product options.
+- [mFilter2] All filter methods are receives the name of field to work.
+
+1.5.16-pl
+==============
+- [mFilter2] Added parameter "cacheTime".
+- [mFilter2] Cache disabled by default.
+- [mFilter2] The support of dots in the names of filters.
+
+1.5.15 pl
+==============
+- Improved compatibility with PHP 7.1.
+- Fixed passing of Fenom tags into intro text of resources.
+
+1.5.14 pl
+==============
+- Fixed error in default javascript under IE9.
+
+1.5.13 pl
+==============
+- Fixed model for MySQL 5.7.
+
+1.5.12 pl
+==============
+- [mFilter2] Categories filters are now uses menutitle if not empty.
+
+1.5.11 pl
+==============
+- [mFilter2] Fixed some bugs with url params with ajaxMode == button or scroll.
+- [mFilter2] Improved support of multibyte characters.
+
+1.5.10 pl
+==============
+- Fixed issues with pdoTools 2.3.4.
+- [mSearch2] Added parameter &toSeparatePlaceholders.
+
+1.5.9 pl
+==============
+- Improved load of pdoTools.
+- [mFilter2] Trim TVs values.
+
+1.5.8 pl
+==============
+- [mFilter2] Fixed small bug with disabling filters when there are no results.
+
+1.5.7 pl
+==============
+- [mSearch2] Fixed work of &toPlaceholder with &returnIds.
+
+1.5.6 pl
+==============
+- [mFilter2] Fixed insert of suggestions in "option" tag with brackets in text.
+- [mFilter2] Improved filter "boolean".
+
+1.5.5 pl1
+==============
+- Fixed static plugin
+
+1.5.5 pl
+==============
+- [mFilter2] Fixed wrong form submission when mSearch2.autoLoad is false.
+
+1.5.4 pl
+==============
+- [mFilter2] Added parameter &ajaxMode: default, scroll or button.
+- [mFilter2] Added support of pdoTitle with enabled &registerJs.
+
+1.5.3 pl
+==============
+- [mFilter2] Fixed rare bug with empty results when there is no filters and &toSeparatePlaceholders enabled.
+
+1.5.2 pl
+==============
+- [mSearch2] Added system events mse2OnBeforeSearchIndex and mse2OnSearchIndex.
+
+1.5.1 pl
+==============
+- [mSearch2] Fixed work of search aliases.
+
+1.5.0 pl
+==============
+- [mSearch2] New search algorithm.
+
+1.4.3 pl
+==============
+- [mSearch2] A small adjustment of default search settings.
+- [mSearch2] New snippet parameter &onlyAllWords.
+
+1.4.2 pl
+==============
+- [mFilter2] Fixed bug with filter on not first page.
+
+1.4.1 pl
+==============
+- [mFilter2] Fixed boolean filter.
+- [mFilter2] Fixed bug with clear button right after page load.
+- [mFilter2] Support of disabled friendly urls.
+- [mFilter2] Improved "You have selected" element.
+- [mFilter2] New parameter &filterOptions for overwrite javascript config.
+- [mFilter2] Added support for default values of TVs.
+- [mSearch2] Index processor can parse JSON in TVs.
+
+1.4.0 pl
+==============
+- [#32] [mFilter2] Support of History Api.
+- [#31] [mFilter2] Added clear button.
+- Ability to send requests to another page without ajax.
+
+1.3.9 pl
+==============
+- Ability to use several pagination elements.
+
+1.3.8 pl
+==============
+- Base support of miniShop2.3 without SKU.
+
+1.3.7 pl
+==============
+- Fixed some warnings in system log.
+- [#39] Added option &showSearchLog for enabled &showLog.
+- [#38] Fixed placeholder "weight" of snippet mSearch2 when it used inside mFilter2.
+
+1.3.6 pl
+==============
+- [mFilter2] Fixed bug with wrong suggestions on page reload.
+
+1.3.5 pl
+==============
+- [mFilter2] Fixed handling of quotes in filters.
+
+1.3.4 pl
+==============
+- [mFilter2] Improved boolean filter.
+
+1.3.3 pl1
+==============
+- Updated version of pdoTools in the installer.
+
+1.3.2 pl1
+==============
+- [mSearch2] Added new system option "mse2_index_all".
+- [mSearch2] Added new system option "mse2_index_split_words".
+
+1.3.1 pl
+==============
+- [mFilter2] Fixed "filter_key" placeholder in outer chunks.
+
+1.3.0 pl
+==============
+- [mFilter2] Added filters "month" and "day".
+- [mFilter2] Ability to use one field multiple times in filters.
+- [mFilter2] Improved suggestions for more optimal processing.
+- [mFilter2] Ability to set aliases for filters.
+- [mFilter2] Aliases used for templates names.
+- [mFilter2] Fixed suggestions for dates filters.
+- [mFilter2] Fixed &showEmptyFilters in dates filters.
+
+1.2.7 pl
+==============
+- [mFilter2] Fixed search with &parents parameter.
+
+1.2.6 pl
+==============
+- [mSearch2] Improved simple search for additional bonuses.
+
+1.2.5 pl
+==============
+- [#34] [mSearchForm] Fixed &autocomplete=`0`.
+
+1.2.4 pl1
+==============
+- [mFilter2] Fixed adding new filters from build methods.
+- [mFilter2] Fixed possible E_NOTICE.
+
+1.2.3 pl2
+==============
+- [#33] [mFilter2] Fixed build of TVs filters.
+- [mFilter2] Fixed limit on search.
+- [mFilter2] Fixed displaying of empty filters on page.
+
+1.2.2 pl
+==============
+- [mFilter2] Fixed display order of specified &filters.
+- [Main] Removed register of jQuery on frontend.
+
+1.2.1 pl
+==============
+- [mFilter2] Added support of "autotag" TVs.
+
+1.2.0 pl
+==============
+- [mFilter2] Added triggering of jQuery event "mse2_load".
+- [mFilter2] Added support of pdoTools 1.10.
+- [mFilter2] Added filter "decimal".
+- [mFilter2] Fixed default javascript for decimal values in slider.
+- [mFilter2] Fixed search in filter.
+
+1.2.0 rc1
+==============
+- [mFilter2] Ability to add new filters from build methods.
+- [mFilter2] Support of special options of miniShop2 products in "key==value" format.
+
+1.1.5 pl1
+==============
+- [#11] Added support of msVendor.
+- Improved processing of tags in quick search.
+
+1.1.4 pl1
+==============
+- Fixed pagination links in ajax requests.
+
+1.1.3 pl
+==============
+- Improved indexing manager page.
+
+1.1.2 pl
+==============
+- [mSearch2] Fixed parameter &toPlaceholder.
+
+1.1.1 pl
+==============
+- Changed sort of parents filters to menuindex.
+- Fixed autocomplete when unpublished resources are found.
+- Fixed retrieving of resource fields.
+
+1.1.0 pl
+==============
+- Improved search index and algorithm.
+- Ability to specify indexed fields for search by parameter &fields=``.
+- Ability to disable additional results by LIKE search by parameter &onlyIndex=``.
+- Fixed loading Font Awesome.
+- Added support of AjaxManager.
+- [#30] [mSearch2] Added "not found" message when results are limited by snippet parameters.
+- [#29] Returned lost button "Remove all queries".
+- [#27] Added ability to specify properties set in element and paginator name.
+- [#25] Added select filters.
+- [#24] [mFilter2] Added filtering of negative numbers in slider.
+- [#23] Added placeholder "results" to &toSeparatePlaceholders=`1` mode.
+- Fixed ajax filtering with &toSeparatePlaceholders=`1`.
+- Improved snippet mSearch2 when &returnIds=`1`.
+
+1.0.4 pl
+==============
+- Improved UI for MODX 2.3.
+- Added Font Awesome icons.
+- Added ability to install new dictionary by double click on grid row.
+- Improved chunks.
+
+1.0.3 pl
+==============
+- [#21] Added support filtering by date for TV of type date.
+- [#20] All templates of filters are converted to lowercase.
+
+1.0.2 pl
+==============
+- [#14] Changed build filters methods.
+- Fixed E_NOTICE in mFilter2.
+
+1.0.1 pl
+==============
+- [#14] Added passing of the filter name in the method of build.
+- Improved support of TVs with type "listbox" and "tag".
+- Do not call highlight method on search results if query is empty.
+
+1.0.0 pl1
+==============
+- [#10] [mFilter2] Fixed bug with sort in Safari and Firefox.
+- [#9] [mFilter2] Added set of placeholder "mse2_filters_count".
+- Improved load if pdoFetch class.
+- Fixed possible incorrect characters in the English dictionary.
+- Added manager page with dictionaries.
+- Added new snippet "mSearchForm" with autocomplete.
+- Improved registering of frontend scripts.
+- Fixed replacement of aliases in the search query.
+- Improved javascript slider
+- Fixed overwriting parameters &sortby and &sortdir. Parameter &sort has priority.
+
+1.0.0 beta2
+==============
+- Fixed [[+total]] placeholder for new pdoPage versions.
+- More convenient suggestions.
+- Added filter "grandparents".
+- Added ability to update chunks on package upgrade.
+- Added manager page with words aliases.
+- Added manager page with search queries.
+- Improved mSearch2::Search() for aliases support.
+- Improved mSearch2::Highlight() for more exact cutting of text.
+- Enabling of parameter "showLog" of snippets displays also log of search.
+- Added system parameter "like_match_bonus".
+- Fixed possible warnings when word from dictionary has incorrect symbols.
+
+0.9.1 pl2
+==============
+- Improved verification of search query.
+- [mSearch2] Parameter "forceSearch" enabled by default.
+
+0.9.0 pl
+==============
+- [mFilter2] Changed default &paginator=`` to "pdoPage".
+- [mFilter2] Improved filtration of conditions for retrieve resources. Now it handle end snippet with parameter &returnIds=`1`.
+- [mSearch2] Optimized for last version of pdoTools.
+- [mSearch2] Added parameter "forceSearch" to specify whether or not to show list of resources without search query.
+- Improved javascript. Hide of block "limit" when no results.
+- Improved speed of mseFiltersHandler2::filterDate().
+- Default chunks support Bootstrap3.
+- Fixed context switch in action.php
+
+0.8.4 pl
+==============
+- Added filter by year of document. For example: "publishedon:year".
+- Improved search algorithm, when there is only one word in query.
+- Improved buildParentsFilter(). Now it works for parents from different contexts.
+- Added support of placeholders [^q^] and [^qt^].
+
+0.8.3 pl2
+==============
+- Improved check of "limit" parameter.
+
+0.8.3 pl2
+==============
+- Returned missed function "implode_r" into index processor.
+
+0.8.3 pl1
+==============
+- [mSearch2] Improved search algorithm.
+- [mFilter2] Fixed processing parameters of snippet.
+
+0.8.2 pl1
+==============
+- [mFilter2] If no results, message about it will be returned in "&tplOuter=``".
+
+0.8.2 pl
+==============
+- [mFilter2] Fixed work with MS2 multicategories.
+- [mFilter2] Improved working with search results.
+- [mSearch2] Improved search algorithm.
+
+0.8.1 pl1
+==============
+- [mFilter2] Improved work with modified &queryVar=`` and &parentsVar=``.
+- [mFilter2] Improved return of error messages, when nothing found.
+- [mFilter2] Improved work with limit, when page loaded by direct link.
+- [mFilter2] Improved sort links.
+- [mFilter2] Array with config for frontend is now available as placeholders with prefix "mse2_". E.g. [[+mse2_start_sort]], [[+mse2_tpls]] etc.
+
+0.8.0 pl
+==============
+- [#7] You can prefix ids in "&resources=``" and "&parents=``" with dash for excluding from query.
+- [#5] Added parameter "&toSeparatePlaceholders=``" to snippet mFilter2. Parameter "&toPlaceholder" renamed to "&toPlaceholders".
+- Fixed issues when parents not in current contexts.
+- Added parameter "&hideContainers=``" to both snippets.
+- Added parameters "&tplWrapper=``" and "&wrapIfEmpty=``" to snippet mSearch2.
+- Accelerated method mse2FiltersHandler::filterNumber().
+- Fixed bug in filters, when TVs has capital letters in the name.
+- [mFilter2] Added default implementation of "limit" parameter.
+- [mFilter2] Added default implementation of range slider.
+- [mFilter2] Added default implementation of list of selected inputs.
+- Method "mSearch2.load()" in default javascript can receive filter parameters and callback function.
+
+0.7.0 pl
+==============
+- Added support for list-style TVs.
+- Fixed issues with pdoTools installation.
+
+0.6.2 pl2
+==============
+- [mFilter2] New parameter "tpls" for change tpl of rows in request.
+- [mFilter2] Fixed warning in log when no MS2 installed.
+- [mFilter2] Fixed cache problem when retrieving products in multicategories, again.
+
+0.6.1 pl
+==============
+- [mFilter2] Added support of old browsers without history api. They will use hash in url.
+
+0.6.1 rc1
+==============
+- Added method mse2FiltersHandler::buildCategoriesFilter().
+- Added method mse2FiltersHandler::buildFullnameFilter().
+- Added ability to work with mSearch1 for smooth upgrade.
+- Fixed bug with installation when "archive_with" setting is enabled.
+- Improved work with MS2 multi categories.
+- Fixed sort of filter values in ascending order.
+
+0.6.0 beta
+==============
+- System setting "mse2_index_min_words_length" is set to 4 by default, for exclude prepositions.
+- Numbers with length >= 2 are always in search, no matter what set in "mse2_index_min_words_length".
+- Now mSearch2::getSuggestions() can be overloaded in class mse2FiltersHandler.
+- [mFilter2] Added support for MS2 multi categories.
+- [mFilter2] Added support for specify limit.
+- [mFilter2] Added parameter "toPlaceholder".
+- [mFilter2] Parameter "disableSuggestions" is now boolean "suggestions".
+- [mFilter2] Added parameter "suggestionsMaxResults" for disable suggestions when too many results.
+- [mFilter2] Added parameter "suggestionsMaxFilters" for disable suggestions when too many filters.
+- [mFilter2] Added parameter "suggestionsRadio" for radio filters.
+- [mFilter2] Added chunk "tpl.mFilter2.filter.radio".
+- [mFilter2] Added parameters: "filter_delimeter", "method_delimeter" and "values_delimeter".
+- [mFilter2] Added saving of weight of found resources, if used snippet mSearch2 for display items.
+- [mSearch2] Parameter "resources" now can take a JSON string with id as a key, and weight as a value.
+- [mSearch2] Added total number of filter operations in log.
+- Speed improvements.
+
+0.5.1 pl2
+==============
+- Fixed work with "&includeTVs" when snippet mFilter2 calls snippet mSearch2.
+- Added verification for non existing filter methods.
+- Filter speed improvements.
+
+0.5.1 pl1
+==============
+- Added excluding not searchable resources from index.
+- Small improvements of default javascript.
+
+0.5.1 beta2
+==============
+- Added msFiltersHandler::getMsOptionValues() method. You can use &filters=`msoption|size,msoption|color` now.
+- Added update of main filter log on ajax requests, if enabled.
+- Added parameter "disableSuggestions" for very fast filtration. if enabled, you will not see small numbers next to the filter parameters.
+- Improved indexing. It is recommended to update the search index manually.
+
+0.5.0 beta2
+==============
+- Added snippet mFilter2
+- Added default javascript
+- Added default css
+
+0.4.0 beta
+==============
+- Improved search algorithm. Added %LIKE% search for words, that was not found in index.
+- Improved highlight of search results for %LIKE% results.
+
+0.3.0 beta1
+==============
+- Fixed snippet offset bug
+
+0.3.0 beta
+==============
+- Improved search algorithm
+- Improved highlight of search results
+- Improved search snippet
+
+0.2.0
+==============
+- Added manager pages
+- Added indexing plugin
+
+0.1.0
+==============
+- Initial release with relevant morphological search.

@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+core/cache/
+core/packages/*/
+config.inc.php
+config.core.php
+public_html/assets/images/
+
+*.sh
+tmp/

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="easycomm" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="easycomm" version="1.1">
+    <object class="ecThread" table="ec_threads" extends="xPDOSimpleObject">
+        <field key="resource" dbtype="int" precision="11" phptype="integer" null="false" default="0" />
+        <field key="name" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="title" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="message_last" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="message_last_date" dbtype="datetime" phptype="datetime" null="true" index="index" />
+        <field key="count" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="rating_simple" dbtype="decimal" precision="12,6" phptype="float" null="false" default="0" />
+        <field key="rating_wilson" dbtype="decimal" precision="12,6" phptype="float" null="false" default="0" />
+        <!--<field key="rating_custom" dbtype="decimal" precision="12,6" phptype="float" null="false" default="0" />-->
+        <field key="properties" dbtype="text" phptype="json" null="true" />
+        <field key="extended" dbtype="text" phptype="string" null="true" />
+
+        <index alias="unique_key" name="unique_key" primary="false" unique="true" type="BTREE">
+            <column key="name" length="" collation="A" null="false" />
+        </index>
+        <index alias="resource" name="resource" primary="false" unique="false" type="BTREE">
+            <column key="resource" length="" collation="A" null="false" />
+        </index>
+        <index alias="message_last" name="message_last" primary="false" unique="false" type="BTREE">
+            <column key="message_last" length="" collation="A" null="false" />
+        </index>
+        <index alias="message_last_date" name="message_last_date" primary="false" unique="false" type="BTREE">
+            <column key="message_last_date" length="" collation="A" null="false" />
+        </index>
+
+        <aggregate alias="Resource" class="modResource" local="resource" foreign="id" cardinality="one" owner="foreign" />
+        <composite alias="Messages" class="ecMessage" local="id" foreign="thread" cardinality="many" owner="local" />
+    </object>
+    <object class="ecMessage" table="ec_messages" extends="xPDOSimpleObject">
+        <field key="thread" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="subject" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="date" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="user_name" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="user_email" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="user_contacts" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="text" dbtype="text" phptype="string" null="false" default="" />
+        <field key="reply_author" dbtype="varchar" precision="255" phptype="string" null="false" default="" />
+        <field key="reply_text" dbtype="text" phptype="string" null="false" default="" />
+        <field key="notify" dbtype="tinyint" precision="1" attributes="unsigned" phptype="integer" null="false" default="0" />
+        <field key="notify_date" dbtype="datetime" phptype="datetime" null="true" />
+
+        <field key="ip" dbtype="varchar" precision="16" phptype="string" null="false" default="0.0.0.0" />
+        <field key="rating" dbtype="tinyint" precision="1" phptype="integer" null="false" default="0" />
+
+        <field key="createdon" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="createdby" dbtype="int" precision="10" phptype="integer" null="true" default="0" />
+
+        <field key="editedon" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="editedby" dbtype="int" precision="10" phptype="integer" null="true" default="0" />
+
+        <field key="published" dbtype="tinyint" precision="1" attributes="unsigned" phptype="integer" null="false" default="0" />
+        <field key="publishedon" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="publishedby" dbtype="int" precision="10" phptype="integer" null="true" default="0" />
+
+        <field key="deleted" dbtype="tinyint" precision="1" attributes="unsigned" phptype="integer" null="false" default="0" />
+        <field key="deletedon" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="deletedby" dbtype="int" precision="10" phptype="integer" null="true" default="0" />
+
+        <field key="extended" dbtype="text" phptype="json" null="true" />
+
+        <index alias="thread" name="thread" primary="false" unique="false" type="BTREE">
+            <column key="thread" length="" collation="A" null="false" />
+        </index>
+        <index alias="deleted" name="deleted" primary="false" unique="false" type="BTREE">
+            <column key="deleted" length="" collation="A" null="false" />
+        </index>
+        <index alias="published" name="published" primary="false" unique="false" type="BTREE">
+            <column key="published" length="" collation="A" null="false" />
+        </index>
+
+        <aggregate alias="Thread" class="ecThread" local="thread" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+</model>
